@@ -1,203 +1,198 @@
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="shortcut icon" href="images/favicons.ico">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<title>RESUME</title>
-<style>
-
-#base
-{
-  float:left;
-  width:25%;
-  height: 100%;
-  top:0px;
-  left:0px;
-}
-
-h1{
-  font-family:Capriola;
-}
-
-body{
-  margin:0px;
-  padding:0px;
-  overflow: hidden;
-}
-
-#secondbase
-{
-  position: static;
-  float:right;
-  width:75%;
-  height:100%;
-}
-
-#mass{
-  position: absolute;
-  content: "";
-  top:22%;
-  left:42%;
-  width:720px;
-  height: 330px;
-
-}
-
-#me {
-  font-family: Amaranth;
-}
-
-#footer {
-position:absolute;
-bottom:0;
-width:75%;
-font-family: Angkor;
-font-size: 20px;
-height:120px;
-}
-  /* ---- particles.js container ---- */
-#particles-js {
-    position:absolute;
-    width:25%;
-    height:100%;
-    background-color: #b61924;
-    background-image: url("images/back.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    text-align: center;
-    background-blend-mode: screen;
-  }
-
-#center {
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="images/favicons.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <title>RESUME</title>
+  <style>
+    #base {
+      float: left;
+      width: 25%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
     }
 
-#pik{
-  position: absolute;
-    content: "";
-    top: 16%;
-    left:13%;
-    right: 50%;
-    height: 350px;
-    width: 300px;
-    border: 15px solid red;
-    display: inline-block;
-    z-index: -1;
-}
+    h1 {
+      font-family: Capriola;
+    }
 
-.imspi{
-  position: absolute;
-  content: "";
-  width:280px;
-  height: 350px;
-  top: 21%;
-  left:12%;
-  right: 50%;
-  z-index: 1 ;
-}
+    body {
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+    }
 
-.wrap {
-  color:red;
-  font-family:Aldrich;
-}
+    #secondbase {
+      position: static;
+      float: right;
+      width: 75%;
+      height: 100%;
+    }
 
-#career{
-  font-family: Baumans;
-  font-size: 22px;
-}
+    #mass {
+      position: absolute;
+      content: "";
+      top: 22%;
+      left: 42%;
+      width: 720px;
+      height: 330px;
 
-</style>
-<script>
-function setdiv()
-{
-   var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
-   document.getElementById('particles-js').style.background=randomColor;
-   document.getElementById('particles-js').style.backgroundImage="url('images/back.jpg')";
-   colorchangers(randomColor);
- }
- function colorchangers(randomColor)
- {
-   document.getElementById('follow').style.background=randomColor;
-   document.getElementById("social").style.background=randomColor;
-   document.getElementById("social1").style.background=randomColor;
-   document.getElementById("social2").style.background=randomColor;
-   document.getElementById("social3").style.background=randomColor;
-   document.getElementById("social4").style.background=randomColor;
-   document.getElementById("pik").style.borderColor=randomColor;
- }
- function shide()
- {
-     document.getElementById('center').style.visibility="visible";
-}
-function hseek()
-{
-    document.getElementById('center').style.visibility="hidden";
-}
-function flwseek()
-{
-    document.getElementById('flw').style.visibility="hidden";
-    setTimeout("flwhide()",5000);
-}
-function flwhide()
-{
-    document.getElementById('flw').style.visibility="visible";
-}
-</script>
+    }
+
+    #me {
+      font-family: Amaranth;
+    }
+
+    #footer {
+      position: absolute;
+      bottom: 0;
+      width: 75%;
+      font-family: Angkor;
+      font-size: 20px;
+      height: 120px;
+    }
+
+    /* ---- particles.js container ---- */
+    #particles-js {
+      position: absolute;
+      width: 25%;
+      height: 100%;
+      background-color: #b61924;
+      background-image: url("images/back.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      text-align: center;
+      background-blend-mode: screen;
+    }
+
+    #center {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    #pik {
+      position: absolute;
+      content: "";
+      top: 16%;
+      left: 13%;
+      right: 50%;
+      height: 350px;
+      width: 300px;
+      border: 15px solid red;
+      display: inline-block;
+      z-index: -1;
+    }
+
+    .imspi {
+      position: absolute;
+      content: "";
+      width: 280px;
+      height: 350px;
+      top: 21%;
+      left: 12%;
+      right: 50%;
+      z-index: 1;
+    }
+
+    .wrap {
+      color: red;
+      font-family: Aldrich;
+    }
+
+    #career {
+      font-family: Baumans;
+      font-size: 22px;
+    }
+  </style>
+  <script>
+    function setdiv() {
+      var randomColor = '#' + ('000000' + Math.floor(Math.random() * 16777215).toString(16)).slice(-6);
+      document.getElementById('particles-js').style.background = randomColor;
+      document.getElementById('particles-js').style.backgroundImage = "url('images/back.jpg')";
+      colorchangers(randomColor);
+    }
+    function colorchangers(randomColor) {
+      document.getElementById('follow').style.background = randomColor;
+      document.getElementById("social").style.background = randomColor;
+      document.getElementById("social1").style.background = randomColor;
+      document.getElementById("social2").style.background = randomColor;
+      document.getElementById("social3").style.background = randomColor;
+      document.getElementById("social4").style.background = randomColor;
+      document.getElementById("pik").style.borderColor = randomColor;
+    }
+    function flwseek() {
+      document.getElementById('flw').style.visibility = "hidden";
+      setTimeout("flwhide()", 5000);
+    }
+    function flwhide() {
+      document.getElementById('flw').style.visibility = "visible";
+    }
+  </script>
 </head>
+
 <body>
-  <div id="base" onclick="setdiv()" onmouseover="shide()" onmouseout="hseek()">
+  <div id="base" onclick="setdiv()">
     <!-- particles.js container -->
     <div id="particles-js">
-      <img src="images/programmer.png" id="center" width="150px" height="120px" alt="ITS ME">
-      </div>
-      <script src="js/particles.js"></script>
-      <script src="js/app.js"></script>
+      
+    </div>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
   </div>
   <div id="pik">
-    </div>
-    <img src="images/spihd.jpg" class="imspi" alt="merapic">
-<div id="secondbase">
-  <h1><center>PREM RESUME<center></h1>
-  <div id="mass">
-  <h1 id="me">  Hi,<br>I Am Prem Rajasekaran</h1><br>
-  <h1>
-    <a href="" class="typewrite" data-period="2000" data-type='[ "Positively Charged.", "Creative.", " Web-Designer.", "Gamer." ]'>
-      <span class="wrap" ></span>
-    </a>
-  </h1>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-      <script  src="js/index1.js"></script>
+  </div>
+  <img src="images/spihd.jpg" class="imspi" alt="merapic">
+  <div id="secondbase">
+    <h1>
+      <center>PREM RESUME<center>
+    </h1>
+    <div id="mass">
+      <h1 id="me"> Hi,<br>I Am Prem Rajasekaran</h1><br>
+      <h1>
+        <a href="" class="typewrite" data-period="2000"
+          data-type='[ "Positively Charged.", "Creative.", " Web-Designer.", "Gamer." ]'>
+          <span class="wrap"></span>
+        </a>
+      </h1>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src="js/index1.js"></script>
       <br>
       <div id="career">
-      To be eminent in the field assigned by challenging myself,exploring my skills
-      and working hard as true to my conscience for the raise spirits  of the organization as well as my personal growths.
+        To be eminent in the field assigned by challenging myself,exploring my skills
+        and working hard as true to my conscience for the raise spirits of the organization as well as my personal
+        growths.
+      </div>
+    </div>
+    <div id="footer">
+      <div id="flw">
+        <center>FOLLOW ME
+      </div>
+      <nav class="ss-icon" tabindex="0" id="follow" onclick="flwseek()">
+        <span id="center-bar"></span>
+        <a href="https://www.instagram.com/" id="social"><span>Instagram</span></a>
+        <a href="https://www.facebook.com" id="social1"><span>Facebook</span></a>
+        <a href="https://www.gmail.com" id="social2"><span>Mail</span></a>
+        <a href="https://www.twitter.com" id="social3"><span>Twitter</span></a>
+        <a href="https://www.linkedin.com" id="social4"><span>LinkedIn</span></a>
+      </nav>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src="js/index.js"></script>
     </div>
   </div>
-  <div id="footer">
-    <div id="flw"><center>FOLLOW ME</div>
-    <nav class="ss-icon" tabindex="0"  id="follow" onclick="flwseek()" >
-   <span id="center-bar" ></span>
-   <a href="https://www.instagram.com/" id="social" ><span>Instagram</span></a>
-   <a href="https://www.facebook.com" id="social1" ><span>Facebook</span></a>
-   <a href="https://www.gmail.com" id="social2" ><span>Mail</span></a>
-   <a href="https://www.twitter.com" id="social3" ><span>Twitter</span></a>
-   <a href="https://www.linkedin.com" id="social4" ><span>LinkedIn</span></a>
- </nav>
- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-   <script  src="js/index.js"></script>
-  </div>
-</div>
 </body>
+
 </html>
