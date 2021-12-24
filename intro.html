@@ -57,7 +57,8 @@
 
     #footer {
       position: absolute;
-      bottom: 0;
+      display: none;
+      bottom: 10px;
       width: 75%;
       font-family: Angkor;
       font-size: 20px;
@@ -69,13 +70,9 @@
       position: absolute;
       width: 25%;
       height: 100%;
-      background-color: #b61924;
-      background-image: url("images/back.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
       text-align: center;
       background-blend-mode: screen;
+      background: rgb(7, 51, 140) url("images/back.jpg") 0% 0%;
     }
 
     #center {
@@ -92,7 +89,7 @@
       right: 50%;
       height: 350px;
       width: 300px;
-      border: 15px solid red;
+      border: 15px solid rgb(7, 51, 140);
       display: inline-block;
       z-index: -1;
     }
@@ -109,7 +106,7 @@
     }
 
     .wrap {
-      color: red;
+      color: rgb(7, 51, 140);
       font-family: Aldrich;
     }
 
@@ -118,30 +115,6 @@
       font-size: 22px;
     }
   </style>
-  <script>
-    function setdiv() {
-      var randomColor = '#' + ('000000' + Math.floor(Math.random() * 16777215).toString(16)).slice(-6);
-      document.getElementById('particles-js').style.background = randomColor;
-      document.getElementById('particles-js').style.backgroundImage = "url('images/back.jpg')";
-      colorchangers(randomColor);
-    }
-    function colorchangers(randomColor) {
-      document.getElementById('follow').style.background = randomColor;
-      document.getElementById("social").style.background = randomColor;
-      document.getElementById("social1").style.background = randomColor;
-      document.getElementById("social2").style.background = randomColor;
-      document.getElementById("social3").style.background = randomColor;
-      document.getElementById("social4").style.background = randomColor;
-      document.getElementById("pik").style.borderColor = randomColor;
-    }
-    function flwseek() {
-      document.getElementById('flw').style.visibility = "hidden";
-      setTimeout("flwhide()", 5000);
-    }
-    function flwhide() {
-      document.getElementById('flw').style.visibility = "visible";
-    }
-  </script>
 </head>
 
 <body>
@@ -155,33 +128,25 @@
   </div>
   <div id="pik">
   </div>
-  <img src="images/spihd.jpg" class="imspi" alt="merapic">
+  <img src="images/programmer.png" class="imspi" alt="merapic">
   <div id="secondbase">
-    <h1>
-      <center>PREM RESUME<center>
-    </h1>
     <div id="mass">
       <h1 id="me"> Hi,<br>I Am Prem Rajasekaran</h1><br>
       <h1>
         <a href="" class="typewrite" data-period="2000"
-          data-type='[ "Positively Charged.", "Creative.", " Web-Designer.", "Gamer." ]'>
+          data-type='[ "Friendly Neighbourhood Dev", "Creative.", " Web-Designer.", "Gamer.", "Full Stack Developer." ]'>
           <span class="wrap"></span>
         </a>
       </h1>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-      <script src="js/index1.js"></script>
+      <script src="js/index.js"></script>
       <br>
       <div id="career">
-        To be eminent in the field assigned by challenging myself,exploring my skills
-        and working hard as true to my conscience for the raise spirits of the organization as well as my personal
-        growths.
+        --TBD--
       </div>
     </div>
     <div id="footer">
-      <div id="flw">
-        <center>FOLLOW ME
-      </div>
-      <nav class="ss-icon" tabindex="0" id="follow" onclick="flwseek()">
+      <nav class="ss-icon" tabindex="0" id="follow">
         <span id="center-bar"></span>
         <a href="https://www.instagram.com/" id="social"><span>Instagram</span></a>
         <a href="https://www.facebook.com" id="social1"><span>Facebook</span></a>
