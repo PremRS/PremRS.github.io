@@ -1,2 +1,2 @@
-# Profile-Builder
+# Profile
 Web based resume template
