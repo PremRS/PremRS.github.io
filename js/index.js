@@ -54,3 +54,12 @@ window.onload = function () {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.1em solid #000}";
     document.body.appendChild(css);
 };
+
+function toggleMode() {
+    var imageContainer = document.getElementById("mode");
+    imageContainer.src = "images/light-bulb-on.svg";
+    document.body.style.transition = 'color 1s, background-color 1s';
+
+    document.getElementById("theme").classList.toggle("light");
+    console.log(imageContainer);
+}
