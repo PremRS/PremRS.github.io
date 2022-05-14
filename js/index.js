@@ -55,15 +55,11 @@ window.onload = function () {
     document.body.appendChild(css);
 };
 
-function clickSet() {
-    circularnav.classList.toggle("clicked");
+function toggleMode() {
+    var imageContainer = document.getElementById("mode");
+    imageContainer.src = "images/light-bulb-on.svg";
+    document.body.style.transition = 'color 1s, background-color 1s';
+
+    document.getElementById("theme").classList.toggle("light");
+    console.log(imageContainer);
 }
-
-var circularnav = document.getElementsByClassName("ss-icon")[0];
-circularnav.addEventListener("click", clickSet, false);
-
-circularnav.addEventListener("keydown", function (e) {
-    if (e.keyCode === 13) {
-        clickSet();
-    }
-});
