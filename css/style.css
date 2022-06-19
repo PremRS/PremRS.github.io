@@ -18,6 +18,10 @@ body {
   scroll-snap-align: start;
 }
 
+.display-none {
+  display: none;
+}
+
  /* Hide scrollbar for Chrome, Safari and Opera */
  html::-webkit-scrollbar {
   display: none;
@@ -40,6 +44,14 @@ html {
 
 .hero-container {
   height: 80%;
+}
+
+.under_construction-container {
+  height: 60%;
+}
+
+.launch-container {
+  height: 20%;
 }
 
 .padding-25 {
@@ -180,6 +192,21 @@ a {
   cursor: pointer;
 }
 
+.primary {
+  color: #F7931E;
+  font-size: 32px;
+}
+
+.secondary {
+  color: #5B85AA;
+  font-size: 28px;
+}
+
+.tertiary {
+  color: #333333;
+  font-size: 24px;
+}
+
 .color {
   color: #F7931E; /** Orange **/
   color: #333333; /** Black Coral **/
@@ -238,3 +265,58 @@ a {
   }
 }
 
+.animate {
+  -webkit-animation: move-up 2s ease-in-out forwards;
+  animation: move-up 2s ease-in-out forwards;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+@keyframes move-up {
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.animate-delay_50 {
+  animation-delay: 0.5s
+}
+
+.animate-delay_1 {
+  animation-delay: 1s
+}
+
+.animate-delay_150 {
+  animation-delay: 1.5s
+}
+
+.animate-delay_2 {
+  animation-delay: 2s
+}
+
+.animate-delay_250 {
+  animation-delay: 2.5s
+}
+
+.animate-delay_3 {
+  animation-delay: 3s
+}
+
+.animate-delay_350 {
+  animation-delay: 3.5s
+}
+
+.animate-zoom {
+  -webkit-animation: zoom-in 2s ease-in-out forwards;
+  animation: zoom-in 2s ease-in-out forwards;
+  transform: scale(0);
+  opacity: 0;
+}
+
+@keyframes zoom-in {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
