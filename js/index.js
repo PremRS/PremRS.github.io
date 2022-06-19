@@ -45,31 +45,35 @@ window.onload = function () {
     var loader = document.getElementById("loader");
     loader.classList.remove("display-none");
 
+    var content = document.getElementById("content");
+
+
     setTimeout(function () {
         loader.classList.add("display-none");
-    },3200)
-    
+        content.classList.remove("display-none");
+    }, 3200)
+
 
     var launchDate = new Date("09/03/2022");
     var launchDateText = document.getElementById("launch-date");
 
     setInterval(function () {
         var today = new Date();
-    
+
         let diffInMilliSeconds = launchDate - today;
-    
-        let seconds = Math.floor(diffInMilliSeconds/1000);
-        let minutes = Math.floor(seconds/60);
-        let hours = Math.floor(minutes/60);
-        let days = Math.floor(hours/24); 
-    
+
+        let seconds = Math.floor(diffInMilliSeconds / 1000);
+        let minutes = Math.floor(seconds / 60);
+        let hours = Math.floor(minutes / 60);
+        let days = Math.floor(hours / 24);
+
         hours = hours - (days * 24);
         minutes = minutes - (days * 24 * 60) - (hours * 60);
-        seconds = seconds - (days * 24 * 60 * 60) - (hours * 60* 60) - (minutes * 60);
+        seconds = seconds - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60);
 
-        console.log("inside");
-        launchDateText.innerHTML = days+ " Days "+ hours +" Hours "+ minutes +" Minutes "+ seconds +" Seconds ";
-    },1000)
+        launchDateText.innerHTML = '<span class="primary">' + days + "</span> Days  "+ '<span class="secondary">' + hours + 
+        "</span> Hours  "+ '<span class="secondary">' + minutes + "</span> Minutes  " + seconds + " Seconds ";
+    }, 1000)
 
 
 
