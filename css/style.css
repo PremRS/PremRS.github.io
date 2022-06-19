@@ -18,6 +18,10 @@ body {
   scroll-snap-align: start;
 }
 
+.display-none {
+  display: none;
+}
+
  /* Hide scrollbar for Chrome, Safari and Opera */
  html::-webkit-scrollbar {
   display: none;
@@ -40,6 +44,14 @@ html {
 
 .hero-container {
   height: 80%;
+}
+
+.under_construction-container {
+  height: 60%;
+}
+
+.launch-container {
+  height: 20%;
 }
 
 .padding-25 {
@@ -238,3 +250,16 @@ a {
   }
 }
 
+.animate {
+  -webkit-animation: move-up 2s ease-in-out forwards;
+  animation: move-up 2s ease-in-out forwards;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+@keyframes move-up {
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
