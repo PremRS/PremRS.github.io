@@ -1,2 +1,1 @@
-# Profile
-Web based resume template
+# Page About Me
