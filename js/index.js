@@ -54,7 +54,7 @@ window.onload = function () {
     }, 3200)
 
 
-    var launchDate = new Date("09/03/2022");
+    var launchDate = new Date("12/31/2022");
     var launchDateText = document.getElementById("launch-date");
 
     setInterval(function () {
