@@ -48,6 +48,7 @@ window.onload = function () {
     var content = document.getElementById("content");
 
 
+    // Loader..
     setTimeout(function () {
         loader.classList.add("display-none");
         content.classList.remove("display-none");
@@ -55,13 +56,13 @@ window.onload = function () {
 
 
     var launchDate = new Date("12/31/2022");
-    var launchDateText = document.getElementById("launch-date");
 
     var daysContainer = document.getElementById("days");
     var hoursContainer = document.getElementById("hours");
     var minutesContainer = document.getElementById("minutes");
     var secondsContainer = document.getElementById("seconds");
 
+    // Launch CountDown logic..
     setInterval(function () {
         var today = new Date();
 
@@ -79,8 +80,7 @@ window.onload = function () {
         daysContainer.innerHTML = days;
         hoursContainer.innerHTML = hours;
         minutesContainer.innerHTML = minutes;
-        secondsContainer.innerHTML = seconds;
-        
+        secondsContainer.innerHTML = seconds;    
     }, 1000);
 
 
