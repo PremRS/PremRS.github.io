@@ -48,7 +48,7 @@ html {
 }
 
 .container {
-  height: 10%;
+  height: 10vh;
 }
 
 .hero-container {
@@ -56,7 +56,7 @@ html {
 }
 
 .under_construction-container {
-  height: 75%;
+  height: 75vh;
 }
 
 .launch-container {
@@ -136,6 +136,18 @@ html {
   width: 20%;
 }
 
+.width-24p {
+  width: 24px;
+}
+
+.width-40 {
+  width: 60%;
+}
+
+.margin-even {
+  margin: 0 auto;
+}
+
 .width-100 {
   width: 100%;
   height: 100%;
@@ -208,7 +220,7 @@ a {
 
 .secondary {
   color: #5B85AA;
-  font-size: 28px;
+  font-size: 18px;
 }
 
 .tertiary {
@@ -220,11 +232,23 @@ a {
   margin-top: 5%;
 }
 
+.margin-1 {
+  margin: 1em;
+}
+
+.margin-25p {
+  margin: 0 0.25em;
+}
+
 .color {
   color: #F7931E; /** Orange **/
   color: #333333; /** Black Coral **/
   color: #5B85AA; /** Steel Blue **/
   color: #141415;
+  color: #E2711D; /** Chocolate Web **/
+  color: #0E5C8B; /** Atoll Blue **/
+  color: #25364C; /** Midnight Blue **/
+  color: #1FA2ED; /** Picton Blue **/
   font-family: manus, league spartan, Titillium Web; 
 }
 
@@ -331,5 +355,33 @@ a {
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .width-40 {
+    width: 100%;
+  }
+
+  .hero-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .under_construction-container {
+    height: 65vh;
+  }
+
+  h2.hero-title {
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .primary {
+    font-size: 24px;
+  }
+
+  .secondary {
+    font-size: 12px;
   }
 }
