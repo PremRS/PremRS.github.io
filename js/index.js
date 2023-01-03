@@ -102,9 +102,19 @@ window.onload = function () {
 
 function toggleMode() {
     var imageContainer = document.getElementById("mode");
-    imageContainer.src = "images/light-bulb-off.svg";
+    imageContainer.style.transition = 'all 1s';
     document.body.style.transition = 'color 1s, background-color 1s';
 
-    document.getElementById("theme").classList.toggle("light");
+    var themeContainer = document.getElementById("theme");
+
+    
+    themeContainer.classList.toggle("light");
+
+    if(themeContainer.classList.contains("light")) {
+        imageContainer.src = "images/light-bulb-off.svg";
+    } else {
+        imageContainer.src = "images/light-bulb-on.svg";
+    }
+    
     console.log(imageContainer);
 }
