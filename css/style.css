@@ -115,8 +115,8 @@ html {
 }
 
 .light {
+  background: #fff;
   color: #141415;
-  background: rgb(216, 216, 216);
 }
 
 .logo-image {
