@@ -199,7 +199,6 @@ a {
 .link > a:hover::before {
   transform: scaleX(1);
   transform-origin: left;
-
 }
 
 .l {
