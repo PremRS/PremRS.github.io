@@ -239,6 +239,10 @@ a {
   margin: 0 0.25em;
 }
 
+.text-bold {
+  font-weight: 800;
+}
+
 .color {
   color: #F7931E; /** Orange **/
   color: #333333; /** Black Coral **/

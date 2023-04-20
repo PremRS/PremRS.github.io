@@ -55,7 +55,7 @@ window.onload = function () {
     }, 3200)
 
 
-    var launchDate = new Date("03/31/2023");
+    var launchDate = new Date("06/30/2023");
 
     var daysContainer = document.getElementById("days");
     var hoursContainer = document.getElementById("hours");
@@ -110,11 +110,5 @@ function toggleMode() {
     
     themeContainer.classList.toggle("light");
 
-    if(themeContainer.classList.contains("light")) {
-        imageContainer.src = "images/light-bulb-off.svg";
-    } else {
-        imageContainer.src = "images/light-bulb-on.svg";
-    }
-    
-    console.log(imageContainer);
+    imageContainer.src = themeContainer.classList.contains("light") ? "images/light-bulb-off.svg": "images/light-bulb-on.svg";
 }
