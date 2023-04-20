@@ -55,7 +55,7 @@ window.onload = function () {
     }, 3200)
 
 
-    var launchDate = new Date("03/31/2023");
+    var launchDate = new Date("06/30/2023");
 
     var daysContainer = document.getElementById("days");
     var hoursContainer = document.getElementById("hours");
@@ -102,9 +102,13 @@ window.onload = function () {
 
 function toggleMode() {
     var imageContainer = document.getElementById("mode");
-    imageContainer.src = "images/light-bulb-off.svg";
+    imageContainer.style.transition = 'all 1s';
     document.body.style.transition = 'color 1s, background-color 1s';
 
-    document.getElementById("theme").classList.toggle("light");
-    console.log(imageContainer);
+    var themeContainer = document.getElementById("theme");
+
+    
+    themeContainer.classList.toggle("light");
+
+    imageContainer.src = themeContainer.classList.contains("light") ? "images/light-bulb-off.svg": "images/light-bulb-on.svg";
 }
