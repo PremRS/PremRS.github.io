@@ -120,8 +120,8 @@ html {
 }
 
 .logo-image {
-  width: 60px;
-  height: 60px;
+  width: 5.75rem;
+  height: 5.75rem;
 }
 
 .padding-1 {
@@ -386,5 +386,10 @@ a {
 
   .secondary {
     font-size: 12px;
+  }
+  
+  .logo-image {
+    width: 3.75rem;
+    height: 3.75rem;
   }
 }
