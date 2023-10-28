@@ -55,7 +55,7 @@ window.onload = function () {
     }, 3200)
 
 
-    var launchDate = new Date("09/30/2023");
+    var launchDate = new Date("12/30/2023");
 
     var daysContainer = document.getElementById("days");
     var hoursContainer = document.getElementById("hours");
