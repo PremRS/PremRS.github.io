@@ -49,10 +49,10 @@ window.onload = function () {
 
 
     // Loader..
-    // setTimeout(function () {
-    //     loader.classList.add("display-none");
-    //     content.classList.remove("display-none");
-    // }, 3200)
+    setTimeout(function () {
+        loader.classList.add("display-none");
+        content.classList.remove("display-none");
+    }, 3200)
 
 
     var launchDate = new Date("12/30/2024");
